@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Priyanshu Gangwar | Frontend Developer | BCA Student</title>
+  <meta name="description" content="Official portfolio of Priyanshu Gangwar. Frontend Developer, BCA Student, responsive web designer, JavaScript learner and aspiring Full Stack Developer." />
+  <meta name="keywords" content="Priyanshu Gangwar, Portfolio, Frontend Developer, HTML, CSS, JavaScript, BCA Student, Web Developer, Responsive Website, GitHub Portfolio" />
+  <meta name="author" content="Priyanshu Gangwar" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+  <div id="loader" aria-live="polite" aria-busy="true">
+    <div class="spinner"></div>
+    <h2>Loading Portfolio...</h2>
+  </div>
+
+  <div id="scrollPercent" aria-hidden="true">0%</div>
+  <div id="progress-bar" aria-hidden="true"></div>
+
+  <header>
+    <nav aria-label="Main Navigation">
+      <a href="#home" class="logo">Priyanshu</a>
+
+      <div class="menu" id="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button class="hamburger" id="menuBtn" type="button" aria-label="Open menu" aria-controls="menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" data-aos="fade-up">
+      <div class="hero-image">
+        <img src="images/profile.webp" alt="Priyanshu Gangwar Profile Photo" loading="eager" width="320" height="320" />
+      </div>
+
+      <div class="hero-content">
+        <h2 id="welcome">Welcome 👋</h2>
+        <h1>Hi, I'm <span>Priyanshu Gangwar</span></h1>
+        <h3 id="typing" aria-live="polite"></h3>
+
+        <div class="status-badge" aria-label="Availability status">
+          <span class="status-dot"></span>
+          Available for Internship
+        </div>
+
+        <p>
+          I am a passionate Frontend Developer and BCA student who enjoys building responsive,
+          modern and user-friendly websites using HTML, CSS and JavaScript.
+          I am continuously learning new technologies and looking for internship opportunities.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="files/Priyanshu_Resume2.pdf" class="btn" download>📄 Download Resume</a>
+          <a href="files/Priyanshu_Resume2.pdf" target="_blank" rel="noopener noreferrer" class="btn">👁 View Resume</a>
+          <a href="#projects" class="btn">🚀 View Projects</a>
+          <a href="#contact" class="btn">📩 Contact Me</a>
+          <button class="btn" id="themeBtn" type="button">🌙 Dark Mode</button>
+        </div>
+
+        <div class="hero-social" aria-label="Social links">
+          <a href="https://github.com/priyanshu01stark" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/priyanshugangwar73" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:priyanshugangwar73@gmail.com" aria-label="Send Email" title="Send Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal" data-aos="fade-right">
+      <h2>About Me</h2>
+      <p>
+        I am Priyanshu Gangwar, a passionate BCA student and aspiring Frontend Developer from Uttar Pradesh,
+        India. I enjoy building responsive websites, learning modern web technologies and solving programming problems.
+      </p>
+
+      <div class="about-info">
+        <div class="info-card">
+          <i class="fas fa-user"></i>
+          <h3>Name</h3>
+          <p>Priyanshu Gangwar</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Education</h3>
+          <p>Bachelor of Computer Applications (BCA)</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+          <p>Moradabad, Uttar Pradesh</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-code"></i>
+          <h3>Specialization</h3>
+          <p>Frontend Development</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-language"></i>
+          <h3>Languages</h3>
+          <p>Hindi & English</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-briefcase"></i>
+          <h3>Status</h3>
+          <p>Open for Internship</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" class="reveal" data-aos="zoom-in">
+      <div class="stat-card">
+        <h2 id="projectCount">0</h2>
+        <p>Projects</p>
+      </div>
+      <div class="stat-card">
+        <h2 id="certificateCount">0</h2>
+        <p>Certificates</p>
+      </div>
+      <div class="stat-card">
+        <h2 id="skillCount">0</h2>
+        <p>Skills</p>
+      </div>
+      <div class="stat-card">
+        <h2 id="codingCount">0</h2>
+        <p>Coding Hours</p>
+      </div>
+    </section>
+
+    <section id="experience" class="reveal" data-aos="fade-up">
+      <h2>Experience</h2>
+      <div class="experience-card">
+        <h3>💼 Web Development Trainee</h3>
+        <p><strong>Organization:</strong> Codec Technologies</p>
+        <p><strong>Duration:</strong> Summer 2026</p>
+        <p>
+          Successfully completed a Summer Training Program in Web Development.
+          Worked on responsive websites using HTML, CSS and JavaScript while learning frontend development, UI design and project deployment.
+        </p>
+      </div>
+      <div class="experience-card">
+        <h3>🌐 Personal Portfolio Project</h3>
+        <p><strong>Role:</strong> Frontend Developer</p>
+        <p><strong>Year:</strong> 2026</p>
+        <p>
+          Designed and developed a fully responsive personal portfolio website.
+          Implemented animations, Dark Mode, project showcase, responsive layouts and JavaScript-based interactive features.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal" data-aos="fade-right">
+      <h2>My Skills</h2>
+
+      <div class="skill">
+        <p>🌐 HTML <span>95%</span></p>
+        <div class="progress"><div class="progress-bar html"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>🎨 CSS <span>90%</span></p>
+        <div class="progress"><div class="progress-bar css"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>⚡ JavaScript <span>75%</span></p>
+        <div class="progress"><div class="progress-bar js"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>🐍 Python <span>70%</span></p>
+        <div class="progress"><div class="progress-bar python"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>💻 C++ <span>80%</span></p>
+        <div class="progress"><div class="progress-bar cpp"></div></div>
+      </div>
+
+      <div class="tech-stack">
+        <h3>Tools & Technologies</h3>
+        <p>Technologies and tools I use for web development.</p>
+        <div class="tech-container">
+          <div class="tech-card">🌐 HTML5</div>
+          <div class="tech-card">🎨 CSS3</div>
+          <div class="tech-card">⚡ JavaScript</div>
+          <div class="tech-card">🐍 Python</div>
+          <div class="tech-card">💻 C++</div>
+          <div class="tech-card">🔧 Git & GitHub</div>
+          <div class="tech-card">📱 Responsive Design</div>
+          <div class="tech-card">📧 EmailJS</div>
+          <div class="tech-card">✨ AOS Animation</div>
+          <div class="tech-card">🌦 OpenWeather API</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal" data-aos="fade-up">
+      <h2>My Projects</h2>
+
+      <div class="project-search">
+        <input type="text" id="projectSearch" placeholder="🔍 Search Projects..." />
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" type="button" onclick="filterProjects('all')">All</button>
+        <button class="filter-btn" type="button" onclick="filterProjects('html')">HTML/CSS</button>
+        <button class="filter-btn" type="button" onclick="filterProjects('javascript')">JavaScript</button>
+        <button class="filter-btn" type="button" onclick="filterProjects('api')">API</button>
+      </div>
+
+      <div class="projects-container">
+        <div class="project-card" data-category="html javascript" onclick="openModal('🌐 Personal Portfolio Website','images/portfolio.png','Responsive portfolio developed using HTML CSS and JavaScript.','https://priyanshu01stark.github.io/Personal-Portfolio/','https://github.com/priyanshu01stark/Personal-Portfolio')">
+          <img src="images/portfolio.png" alt="Portfolio Project" loading="lazy" />
+          <h3>🌐 Personal Portfolio Website</h3>
+          <p>
+            A modern responsive portfolio website showcasing my education, skills, projects, certificates, internship experience, dark mode and interactive JavaScript features.
+          </p>
+          <a href="https://priyanshu01stark.github.io/Personal-Portfolio/" class="btn" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+            <i class="fas fa-globe"></i> Live Demo
+          </a>
+          <a href="https://github.com/priyanshu01stark/Personal-Portfolio" class="btn" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <p><strong>Technology Used:</strong></p>
+          <div class="tech-badges">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="javascript api" onclick="openModal('🌦 Weather App','images/weather.png','Weather application using OpenWeather API.','https://priyanshu01stark.github.io/weather-app/','https://github.com/priyanshu01stark/weather-app')">
+          <img src="images/weather.png" alt="Weather App" loading="lazy" />
+          <h3>🌦 Weather App</h3>
+          <p>
+            A responsive Weather Application that provides real-time weather, 5-day forecast, current location weather, dark mode, search history and dynamic weather backgrounds using OpenWeather API.
+          </p>
+          <a href="https://priyanshu01stark.github.io/weather-app/" class="btn" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+            <i class="fas fa-globe"></i> Live Demo
+          </a>
+          <a href="https://github.com/priyanshu01stark/weather-app" class="btn" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <p><strong>Technology Used:</strong></p>
+          <div class="tech-badges">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>OpenWeather API</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="javascript" onclick="openModal('✅ To Do List','images/todo.png','Task Management Application using JavaScript.','https://priyanshu01stark.github.io/To-Do-list/','https://github.com/priyanshu01stark/To-Do-list')">
+          <img src="images/todo.png" alt="To Do List" loading="lazy" />
+          <h3>✅ To-Do List</h3>
+          <p>
+            A simple task management application where users can add and delete daily tasks.
+          </p>
+          <a href="https://priyanshu01stark.github.io/To-Do-list/" class="btn" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+            <i class="fas fa-globe"></i> Live Demo
+          </a>
+          <a href="https://github.com/priyanshu01stark/To-Do-list" class="btn" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <p><strong>Technology Used:</strong></p>
+          <div class="tech-badges">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="javascript" onclick="openModal('🧮 Calculator','images/calculator.png','Calculator made using HTML CSS JavaScript.','https://priyanshu01stark.github.io/Calculator/','https://github.com/priyanshu01stark/Calculator')">
+          <img src="images/calculator.png" alt="Calculator" loading="lazy" />
+          <h3>🧮 Calculator</h3>
+          <p>
+            A basic calculator capable of performing arithmetic operations like Addition, Subtraction, Multiplication and Division.
+          </p>
+          <a href="https://priyanshu01stark.github.io/Calculator/" class="btn" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+            <i class="fas fa-globe"></i> Live Demo
+          </a>
+          <a href="https://github.com/priyanshu01stark/Calculator" class="btn" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <p><strong>Technology Used:</strong></p>
+          <div class="tech-badges">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="github" class="reveal" data-aos="zoom-in">
+      <h2>GitHub Profile</h2>
+      <div class="github-container">
+        <img src="https://github-readme-stats.vercel.app/api?username=priyanshu01stark&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" loading="lazy" onerror="this.style.display='none'" />
+        <img src="https://github-readme-streak-stats.herokuapp.com?user=priyanshu01stark&theme=tokyonight&hide_border=true" alt="GitHub Streak" loading="lazy" onerror="this.style.display='none'" />
+      </div>
+    </section>
+
+    <section id="certificates" class="reveal" data-aos="fade-left">
+      <h2>My Certificates</h2>
+      <div class="certificate-container">
+        <div class="certificate-card">
+          <img src="images/codec_certificate.png" alt="Codec Certificate" loading="lazy" />
+          <h3>Summer Training (Web Development)</h3>
+          <p><strong>Organization:</strong> Codec Technologies</p>
+          <p><strong>Year:</strong> 2026</p>
+          <a href="files/Internship_Certificate.pdf" class="btn" target="_blank" rel="noopener noreferrer">View Certificate</a>
+        </div>
+
+        <div class="certificate-card">
+          <img src="images/web-development.png" alt="Web Development Certificate" loading="lazy" />
+          <h3>Web Development</h3>
+          <p><strong>Organization:</strong> Infosys</p>
+          <p><strong>Year:</strong> 2026</p>
+          <a href="files/web-development-certificate.pdf" class="btn" target="_blank" rel="noopener noreferrer">View Certificate</a>
+        </div>
+
+        <div class="certificate-card">
+          <img src="images/Yuva-AI.png" alt="Yuva AI Certificate" loading="lazy" />
+          <h3>Yuva AI</h3>
+          <p><strong>Organization:</strong> Future Skill Prime</p>
+          <p><strong>Year:</strong> 2026</p>
+          <a href="files/Yuva-AI.pdf" class="btn" target="_blank" rel="noopener noreferrer">View Certificate</a>
+        </div>
+
+        <div class="certificate-card">
+          <img src="images/generative-ai.png" alt="Generative AI Certificate" loading="lazy" />
+          <h3>Generative AI landscape</h3>
+          <p><strong>Organization:</strong> Infosys</p>
+          <p><strong>Year:</strong> 2026</p>
+          <a href="files/generative-ai-landscape-certificate.pdf" class="btn" target="_blank" rel="noopener noreferrer">View Certificate</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <p id="copyEmail" style="cursor:pointer;">✉️ Email : priyanshugangwar73@gmail.com</p>
+      <p>📱 Phone : +91 93687 53379</p>
+      <p>📍 Location : Moradabad, Uttar Pradesh</p>
+      <p>
+        💻 GitHub :
+        <a href="https://github.com/priyanshu01stark" target="_blank" rel="noopener noreferrer">
+          github.com/priyanshu01stark
+        </a>
+      </p>
+
+      <form id="contactForm" novalidate>
+        <input type="text" id="name" placeholder="Enter Your Name" aria-label="Your name" />
+        <br /><br />
+        <input type="email" id="email" placeholder="Enter Your Email" aria-label="Your email" />
+        <br /><br />
+        <textarea id="message" placeholder="Enter Your Message" aria-label="Your message"></textarea>
+        <br /><br />
+        <button type="submit" class="btn" id="sendBtn">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+
+      <h3>Connect With Me</h3>
+      <div class="social-icons" aria-label="Contact social links">
+        <a href="https://github.com/priyanshu01stark" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/priyanshugangwar73" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:priyanshugangwar73@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </section>
+
+    <div id="projectModal" class="modal" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <span class="close" onclick="closeModal()" aria-label="Close modal">&times;</span>
+        <h2 id="modalTitle">🌐 Personal Portfolio Website</h2>
+        <img src="images/profile.webp" alt="Project Image" loading="lazy" />
+        <p>
+          This portfolio is built using HTML, CSS and JavaScript.
+          It is fully responsive and includes animations, dark mode, projects, certificates and contact form.
+        </p>
+        <a href="https://priyanshu01stark.github.io/Personal-Portfolio/" class="btn" target="_blank" rel="noopener noreferrer">
+          🌐 Live Demo
+        </a>
+        <a href="https://github.com/priyanshu01stark/Personal-Portfolio" class="btn" target="_blank" rel="noopener noreferrer">
+          💻 GitHub
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Priyanshu Gangwar</p>
+    <p>Designed & Developed with ❤️ using HTML, CSS & JavaScript</p>
+    <p>Thank you for visiting my portfolio.</p>
+  </footer>
+
+  <button id="topBtn" type="button" onclick="topFunction()" aria-label="Back to top">⬆</button>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init({ publicKey: "vzJVGN-9pnSUT5KAd" });
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
